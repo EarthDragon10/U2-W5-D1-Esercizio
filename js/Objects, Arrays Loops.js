@@ -93,23 +93,15 @@ let car_1 = {
 	licensePlate: "CQ322LS",
 };
 
-let car_2 = {
-	brand: "Hyundai",
-	model: "i10",
-	licensePlate: "LW340EP",
-};
+let car_2 = { ...car_1, licensePlate: "LW340EP" };
 
-let car_3 = {
-	brand: "Hyundai",
-	model: "i10",
-	licensePlate: "AQ210CM",
-};
+let car_3 = { ...car_1, licensePlate: "AJ477LK" };
 
-let car_4 = {
-	brand: "Hyundai",
-	model: "i10",
-	licensePlate: "MK372PS",
-};
+let car_4 = { ...car_1, licensePlate: "CX988ED" };
+
+let car_5 = { ...car_1, licensePlate: "AQ112LL" };
+
+console.log(car_1, car_2, car_3, car_4, car_5);
 
 /* EXERCISE 9
  Create a variable called carsForRent and assign to it an array containing all the cars from the previous exercise.
