@@ -31,14 +31,14 @@ let anagraficInfo = {
 
 anagraficInfo.drivingLicense = true;
 
-console.log(anagraficInfo);
+// console.log(anagraficInfo);
 
 /* EXERCISE 4
  Remove from the previously created object the age property.
 */
 
 delete anagraficInfo.age;
-console.log(anagraficInfo);
+// console.log(anagraficInfo);
 
 /* EXERCISE 5
  Create a second object with another name, surname, email address and verify that this object has a different email address than the previous one.
@@ -51,7 +51,7 @@ let anagraficInfo_2 = {
 	age: 44,
 };
 
-console.log(anagraficInfo.email === anagraficInfo_2.email);
+// console.log(anagraficInfo.email === anagraficInfo_2.email);
 
 /* EXERCISE 6
  You are working on an e-commerce website. In the variable totalShoppingCart you are storing the total amount spent by the current user.
@@ -60,13 +60,13 @@ console.log(anagraficInfo.email === anagraficInfo_2.email);
 */
 
 let totalShoppingCart = 40;
-console.log(`Spesa iniziale ${totalShoppingCart}`);
+// console.log(`Spesa iniziale ${totalShoppingCart}`);
 
 if (totalShoppingCart <= 50) {
 	totalShoppingCart += 10;
-	console.log(`Spesa finale ${totalShoppingCart}`);
+	// console.log(`Spesa finale ${totalShoppingCart}`);
 } else {
-	console.log(`Spesa finale ${totalShoppingCart}`);
+	// console.log(`Spesa finale ${totalShoppingCart}`);
 }
 
 /* EXERCISE 7
@@ -76,11 +76,11 @@ if (totalShoppingCart <= 50) {
 
 let calcBlackFriday = () => {
 	let discountedPrice = (totalShoppingCart * 20) / 100;
-	console.log(`Lo sconto applicato é pari a ${discountedPrice}`);
+	// console.log(`Lo sconto applicato é pari a ${discountedPrice}`);
 	return totalShoppingCart - discountedPrice;
 };
 
-console.log(`Il totale scontato del 20% é di: ${calcBlackFriday()}`);
+// console.log(`Il totale scontato del 20% é di: ${calcBlackFriday()}`);
 
 /* EXERCISE 8
  Create a variable and assign to it an object representing a car, with properties like brand, model and licensePlate.
@@ -101,32 +101,43 @@ let car_4 = { ...car_1, licensePlate: "CX988ED" };
 
 let car_5 = { ...car_1, licensePlate: "AQ112LL" };
 
-console.log(car_1, car_2, car_3, car_4, car_5);
+// console.log(car_1, car_2, car_3, car_4, car_5);
 
 /* EXERCISE 9
  Create a variable called carsForRent and assign to it an array containing all the cars from the previous exercise.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let carsForRent = [{ car_1 }, { car_2 }, { car_3 }, { car_4 }, { car_5 }];
+// console.log(carsForRent);
 
 /* EXERCISE 10
  Remove the first and the last car from the carsForRent array.
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log(carsForRent);
+
+carsForRent.shift();
+
+console.log(carsForRent);
+
+carsForRent.pop();
+
+console.log(carsForRent);
 
 /* EXERCISE 11
  Print to the console the type of the car variable you created before, as well as the types of its licensePlate and brand properties.
 */
-
-/* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 12
  Create a new variable called carsForSale assigning to it an empty array, and then insert 3 cars into it.
  Create a new variable called totalCars and assign to it the total number of cars present in the carsForSale and carsForRent arrays.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let carsForSale = [];
+
+carsForSale.push({ car_1 }, { car_3 }, { car_5 });
+
+console.log(carsForSale);
 
 /* EXERCISE 13
  Using a loop, print to the console all the data for each car in the carsForSale array.
