@@ -139,8 +139,34 @@ carsForSale.push({ car_1 }, { car_3 }, { car_5 });
 
 console.log(carsForSale);
 
-/* EXERCISE 13
- Using a loop, print to the console all the data for each car in the carsForSale array.
-*/
+function Pets(name, age) {
+	this.name = name;
+	this.age = age;
+	this.doBau = function () {
+		console.log("Bau bauuu!");
+	};
+}
 
-/* WRITE YOUR ANSWER HERE */
+let pets = [new Pets("Cane Pastore", 8), new Pets("Gatto Persiano", 2)];
+console.log(pets);
+pets[0].doBau();
+
+class People {
+	constructor(name, surname, age) {
+		this.name = name;
+		this.surname = surname;
+		this.age = age;
+	}
+
+	sayHi() {
+		console.log("Ciaoooo!");
+	}
+}
+
+let persons = [
+	new People("Paolo", "Pallino", 24),
+	new People("Martina", "Pallina", 33),
+];
+
+console.log(persons);
+persons[0].sayHi();
